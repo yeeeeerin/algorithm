@@ -20,7 +20,7 @@ public class Q11726 {
             dp[1] = 2;
 
             for(int i=2 ;i<n;i++){
-                dp[i] = dp[i-1]%10007+dp[i-2]%10007;
+                dp[i] = dp[i-1]+dp[i-2];
                 dp[i] %= 10007;
             }
 
